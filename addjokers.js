@@ -28,7 +28,7 @@ let jokers = [
       "increases by {C:GOLD}$1{} every time it activates",
 			"{C:JOKER_GREY}(Sustain is important! Next supply drop in: 3)"
     ],
-    image_url: "assets/1x/j_combatacemercenary.png",
+    image_url: "assets/1x/j_combatacesupplies.png",
     rarity: "Common"
   },
   {
