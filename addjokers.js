@@ -1,156 +1,91 @@
 let jokers = [
   {
-    name: "Basepaul Card",
+    name: "Combat Ace - Soldier",
     text: [
-      "{X:mult,C:white} X1.2{} Mult. {X:mult,C:white} X12{} Mult",
-      "instead for {C:red}Paul{}",
-      "{C:inactive}(Who's Paul?)"
+      "Each scored {C:attention}Ace{}",			
+			"adds {C:chips}+35{} Chips",
+			"{C:JOKER_GREY}(Being a soldier is hard. Survived 0 rounds.)"
     ],
-    image_url: "assets/1x/j_mf_basepaulcard.png",
+    image_url: "assets/1x/j_combatacesoldier.png",
+    rarity: "Common"
+  }, 
+  {
+    name: "Combat Ace - Mercenary",
+    text: [
+      "Scored {C:attention}Aces{} add {X:mult,C:white}X1.5{} Mult",			
+      "At the end of a {C:attention}round{} pay {C:money}$5{},",
+      "If you cannot, {C:RED}destroy this joker{}",
+      "{C:JOKER_GREY}(Firepower, but at what cost?)"
+    ],
+    image_url: "assets/1x/j_combatacemercenary.png",
+    rarity: "Common"
+  }, 
+  {
+    name: "Combat Ace - Supplies",
+    text: [
+      "For every {C:RED}3 discarded{} ",			
+			"{C:attention}Aces{} get {C:GOLD}3${}. This bonus ",
+      "increases by {C:GOLD}$1{} every time it activates",
+			"{C:JOKER_GREY}(Sustain is important! Next supply drop in: 3)"
+    ],
+    image_url: "assets/1x/j_combatacemercenary.png",
     rarity: "Common"
   },
   {
-    name: "Jester",
+    name: "Combat Ace - Recruiter",
     text: [
-      "{C:chips,s:1.1}+40{} Chips"
+      " {C:red}Discarded cards{} have a",
+			"{C:green}1 in 8{} chance to",
+			"become an {C:attention}Ace{}",
+			"{C:JOKER_GREY}(Are you interested in joining the ACES?)"
     ],
-    image_url: "assets/1x/j_mf_jester.png",
-    rarity: "Common"
-  },
-  {
-    name: "Lollipop",
-    text: [
-      "{X:mult,C:white} X1.75{} Mult",
-      "{X:mult,C:white} -X0.15{} Mult per",
-      "round played"
-    ],
-    image_url: "assets/1x/j_mf_lollipop.png",
-    rarity: "Common"
-  },
-  {
-    name: "Lucky Charm",
-    text: [
-      "{C:green}1 in 4{} chance for {C:mult}+20{} Mult",
-      "{C:green}1 in 6{} chance to win {C:money}$20",
-      "at end of round"
-    ],
-    image_url: "assets/1x/j_mf_luckycharm.png",
-    rarity: "Common"
-  },
-  {
-    name: "Money Printer",
-    text: [
-      "Earn {C:money}$2{} for each",
-      "played numbered card",
-      "that is a digit of",
-      "your current money",
-      "(Ace = 1, 10 = 0)"
-    ],
-    image_url: "assets/1x/j_mf_moneyprinter.png",
-    rarity: "Common"
-  },
-  {
-    name: "Spiral Joker",
-    text: [
-      "{C:mult}+(10+7cos(pi/8 x {C:attention}$${C:mult})){} Mult",
-      "{C:inactive}({C:attention}$${C:inactive} is your current money)"
-    ],
-    image_url: "assets/1x/j_mf_spiraljoker.png",
-    rarity: "Common"
-  },
-  {
-    name: "Box of Hands",
-    text: [
-      "Sell this card to gain {C:blue}5{} hands",
-      "only for the current round",
-      "{C:inactive}(No effect outside of a round)"
-    ],
-    image_url: "assets/1x/j_mf_boxofhands.png",
+    image_url: "assets/1x/j_combatacerecruiter.png",
     rarity: "Uncommon"
   },
   {
-    name: "Brainrot",
+    name: "Combat Ace - Secret Agent",
     text: [
-      "When {C:attention}Blind{} is selected,",
-      "destroy the leftmost Joker",
-      "and permanently add {C:attention}5x",
-      "its sell value to these {C:blue}Chips"
+      "Copies the effect of the {C:attention}Combat Ace{}",			
+			"to it's right.",
+      "{C:green}{}",
+      "{C:JOKER_GREY}(An enigma of the ACES)",
     ],
-    image_url: "assets/1x/j_mf_brainrot.png",
+    image_url: "assets/1x/j_combatacesecretagent.png",
     rarity: "Uncommon"
   },
   {
-    name: "Hall of Mirrors",
+    name: "Combat Ace - General",
     text: [
-      "{C:attention}+2{} hand size for",
-      "each {C:attention}6{} scored in",
-      "the current round"
+      "{C:attention}\"Combat Ace Jokers\"{}",
+      "each add {X:mult,C:white}X1.5{} Mult",
+      "Also counts itself",
+      "{C:JOKER_GREY}(Aces = Power!)" 
     ],
-    image_url: "assets/1x/j_mf_hallofmirrors.png",
+    image_url: "assets/1x/j_combatacegeneral.png",
     rarity: "Uncommon"
   },
   {
-    name: "Impostor",
+    name: "Combat Ace - Promotion",
     text: [
-      "{X:mult,C:white} X2{} Mult if the",
-      "played hand has",
-      "exactly one {C:red}red{} card"
+			"Played {C:attention}Aces{} have a",
+			"{C:green}1 in 6{} chance to",
+			"become a random edition",
+			"{C:JOKER_GREY}(Time for a promotion!)"
     ],
-    image_url: "assets/1x/j_mf_impostor.png",
-    rarity: "Uncommon"
-  },
-  {
-    name: "Style Meter",
-    text: [
-      "Earn {C:money}$3{} at end",
-      "of round for each",
-      "{C:attention}Blind{} skipped this run"
-    ],
-    image_url: "assets/1x/j_mf_stylemeter.png",
-    rarity: "Uncommon"
-  },
-  {
-    name: "Blood Pact",
-    text: [
-      "{X:mult,C:white} X5{} Mult",
-      "Destroyed if you play",
-      "a non-{C:hearts}Hearts{} card"
-    ],
-    image_url: "assets/1x/j_mf_bloodpact.png",
+    image_url: "assets/1x/j_combatacepromotion.png",
     rarity: "Rare"
   },
   {
-    name: "Glitter Bomb",
+    name: "Combat Ace - Veteran",
     text: [
-      "Sell this card to",
-      "give all held cards",
-      "a random {C:attention}Enhancement{}",
-      "{C:inactive}(Sells for $1)"
+      "Each scored {C:attention}Ace{}",			
+			"repeats and adds {C:chips}+50{} Chips",
+      "This bonus increases by {C:chips}10{} every round",
+			"{C:inactive}(The peak of the ACES. Survived 15 rounds.)"
     ],
-    image_url: "assets/1x/j_mf_glitterbomb.png",
-    rarity: "Rare"
+    image_url: "assets/1x/j_combataceveteran.png",
+    rarity: "Legendary"
   },
-  {
-    name: "Rose-Tinted Glasses",
-    text: [
-      "If {C:attention}first hand{} of round is",
-      "a single {C:attention}2{}, destroy it and",
-      "create a free {C:attention}Double Tag{}",
-    ],
-    image_url: "assets/1x/j_mf_rosetinted.png",
-    rarity: "Rare"
-  },
-  {
-    name: "Triangle Joker",
-    text: [
-      "Gains {C:chips}+1{} Chips and",
-      "increase Chips gained",
-      "by {C:chips}1{} if played hand has",
-      "exactly {C:attention}3{} cards"
-    ],
-    image_url: "assets/1x/j_mf_triangle.png",
-    rarity: "Rare"
-  }
 ]
 
 let cols = {
