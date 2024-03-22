@@ -1,5 +1,64 @@
 let jokers = [
   {
+    name: "Cosmic - Gemini",
+    text: [
+            "Every 2 scored cards of",
+            "the same rank add {X:mult,C:white} X1.2{} Mult",
+            "Retrigger played {C:attention}6{} cards.",				
+            "{C:inactive}(Two are better than one.)"
+    ],
+    image_url: "assets/1x/j_cosmicgemini.png",
+    rarity: "Uncommon"
+  }, 
+  {
+    name: "Cosmic - Leo",
+    text: [
+      "When a played card is retriggered",
+			"by another {C:attention}\"Cosmic\" Joker{},",
+            "{C:green}1 in 3{} chance to retrigger it again.",
+            "Retrigger played {C:attention}King{} cards.",	
+			"{C:inactive}(The mighty Leo rules over them.)"
+    ],
+    image_url: "assets/1x/j_cosmicleo.png",
+    rarity: "Uncommon"
+  }, 
+  {
+    name: "Cosmic - Virgo",
+    text: [
+      "When {C:attention}\"Cosmic\" Joker{} retrigger played cards,",
+			"add {X:purple,C:white}Cosmic-Tokens{} to this card.",
+            "Retrigger played {C:attention}Queen{} cards.",	
+            "{C:inactive}({C:purple}Cosmic-Tokens{}{C:inactive}: 0)",
+			"{C:inactive}(Like a guardian angel, Virgo keeps you safe.)"
+    ],
+    image_url: "assets/1x/j_cosmicvirgo.png",
+    rarity: "Uncommon"
+  }, 
+  {
+    name: "Cosmic - Sagittarius",
+    text: [
+      "When you beat a {C:attention}Blind{},",
+			"add 5 {X:purple,C:white}Cosmic-Tokens{} to this card.",
+            "Gains {X:mult,C:white}X0.01{} Mult for every {C:purple}Cosmic-Tokens{} on your Jokers", 
+            "Retrigger played {C:attention}Jack{} cards.",	
+            "{C:inactive}({C:purple}Total Cosmic-Tokens{}{C:inactive}: 0 = {X:mult,C:white} X1{} Mult)",
+			"{C:inactive}(His arrows will blot out the sun. )"
+    ],
+    image_url: "assets/1x/j_cosmicsagittarius.png",
+    rarity: "Rare"
+  }, 
+  {
+    name: "Cosmic - Libra",
+    text: [
+      "Scored Cards add half of their",
+            "{C:chips}Chips{} value as {C:red}Mult{}",
+            "Retrigger played {C:attention}10{} cards.",				
+			"{C:inactive}(Libra brings balance to all)"
+    ],
+    image_url: "assets/1x/j_cosmiclibra.png",
+    rarity: "Rare"
+  },   
+  {
     name: "Combat Ace - Soldier",
     text: [
       "Each scored {C:attention}Ace{}",			
@@ -111,6 +170,7 @@ let cols = {
   L_BLACK: "#4f6367",
   GREY: "#5f7377",
   CHANCE: "#4BC292",
+  INACTIVE: "#bfc7d5",
   JOKER_GREY: "#bfc7d5",
   VOUCHER: "#cb724c",
   BOOSTER: "#646eb7",
