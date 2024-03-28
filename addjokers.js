@@ -1,63 +1,164 @@
 let jokers = [
   {
+    name : "First Piece of the Mischievous One",
+    text: [
+      "{C:mult}+1{} Mult",
+      "Gains {C:mult}+1{} Mult for every other",
+      "{C:attention}\"The Mischievous One\"{} Joker.",
+"{C:inactive}(A piece of Jimbo the Mischievious One.)",
+"{C:inactive}(Whosoever restores him will know infinite power.)"       
+    ],
+    image_url: "assets/1x/j_firstpieceofthemischievousone.png",
+    rarity: "Common"
+  }, 
+  {
+    name : "Second Piece of the Mischievous One",
+    text: [
+      "{C:mult}+1{} Mult",
+      "Gains {C:mult}+1{} Mult for every other",
+      "{C:attention}\"The Mischievous One\"{} Joker.",
+"{C:inactive}(A piece of Jimbo the Mischievious One.)",
+"{C:inactive}(Whosoever restores him will know infinite power.)"         
+    ],
+    image_url: "assets/1x/j_secondpieceofthemischievousone.png",
+    rarity: "Common"
+  }, 
+  {
+    name : "Third Piece of the Mischievous One",
+    text: [
+      "{C:mult}+1{} Mult",
+      "Gains {C:mult}+1{} Mult for every other",
+      "{C:attention}\"The Mischievous One\"{} Joker.",
+"{C:inactive}(A piece of Jimbo the Mischievious One.)",
+"{C:inactive}(Whosoever restores him will know infinite power.)"        
+    ],
+    image_url: "assets/1x/j_thirdpieceofthemischievousone.png",
+    rarity: "Common"
+  }, 
+  {
+    name : "Fourth Piece of the Mischievous One",
+    text: [
+      "{C:mult}+1{} Mult",
+      "Gains {C:mult}+1{} Mult for every other",
+      "{C:attention}\"The Mischievous One\"{} Joker.",
+"{C:inactive}(A piece of Jimbo the Mischievious One.)",
+"{C:inactive}(Whosoever restores him will know infinite power.)"           
+    ],
+    image_url: "assets/1x/j_fourthpieceofthemischievousone.png",
+    rarity: "Common"
+  }, 
+  {
+    name : "Cultist of the Mischievous One",
+    text: [
+      "When selecting a {C:attention}Blind{}, create 1 {C:attention}\"Piece of the Mischievous One\"{}",         
+			"Gains {X:mult,C:white} X0.2{} for every {C:attention}\"The Mischievous One\"{} Joker.",
+            "At the end of a {C:attention}Round{}, if you have all 4 pieces,",
+            "{C:red}destroy{} them and this card, create 1 {C:legendary}\"Jimbo the Mischievous One\"{}",
+            "{C:inactive}(Must have room. Currently: {X:mult,C:white} X1.2{}{C:inactive} Mult.)",
+			"{C:inactive}(These cultists worship Jimbo like a god.)"               
+    ],
+    image_url: "assets/1x/j_cultistofthemischievousone.png",
+    rarity: "Uncommon"
+  }, 
+  {
+    name : "Jimbo the Mischievous One",
+    text: [
+      "When selecting a {C:attention}Blind{}, destroy all",
+            "{C:attention}\"Pieces of the Mischievous One\"{} you have.",
+            "Gains {X:mult,C:white} X1.5{} for each Joker destroyed by this effect",	
+            "{C:inactive}(Currently {X:mult,C:white} X6{} {C:inactive}Mult)",
+			"{C:inactive}(He returned to spread mischief once more.)"        
+    ],
+    image_url: "assets/1x/j_jimbothemischievousone.png",
+    rarity: "Legendary"
+  }, 
+  {
+    name: "Cosmic - Aquarius",
+    text: [
+      "Add 2 {C:purple}Cosmic-Token{} to every {C:purple}\"Cosmic\" Joker{}",
+      "when you skip any booster",
+      "Retrigger played {C:attention}2{} cards.",	
+      "{C:inactive}({C:purple}Cosmic-Tokens{}{C:inactive}: {X:purple,C:white}0{}{C:inactive})",
+"{C:inactive}(Add something wet here)"
+    ],
+    image_url: "assets/1x/j_cosmicaquarius.png",
+    rarity: "Common"
+  }, 
+  {
+    name: "Cosmic - Pisces",
+    text: [
+      "When selecting a Blind, {C:green}1 in 8{} chance to gain ",
+      "{C:money}$1{} for each {C:purple}Cosmic-Tokens{} on this card.",
+      "Retrigger played {C:attention}3{} cards.",	
+      "{C:inactive}({C:purple}Cosmic-Tokens{}{C:inactive}: {X:purple,C:white}0{}{C:inactive})",
+"{C:inactive}(Add something fishy here)"
+    ],
+    image_url: "assets/1x/j_cosmicpisces.png",
+    rarity: "Common"
+  }, 
+  {
     name: "Cosmic - Gemini",
     text: [
-            "Every 2 scored cards of",
-            "the same rank add {X:mult,C:white} X1.2{} Mult",
-            "Retrigger played {C:attention}6{} cards.",				
-            "{C:inactive}(Two are better than one.)"
+      "Every 2 scored cards of",
+      "the same rank add {X:mult,C:white} X1.2{} Mult",
+      "Retrigger played {C:attention}6{} cards.",	
+      "{C:inactive}({C:purple}Cosmic-Tokens{}{C:inactive}: {X:purple,C:white}0{}{C:inactive})",
+      "{C:inactive}(Two are better than one.)"
     ],
     image_url: "assets/1x/j_cosmicgemini.png",
     rarity: "Uncommon"
-  }, 
-  {
-    name: "Cosmic - Leo",
-    text: [
-      "When a played card is retriggered",
-			"by another {C:attention}\"Cosmic\" Joker{},",
-            "{C:green}1 in 3{} chance to retrigger it again.",
-            "Retrigger played {C:attention}King{} cards.",	
-			"{C:inactive}(The mighty Leo rules over them.)"
-    ],
-    image_url: "assets/1x/j_cosmicleo.png",
-    rarity: "Uncommon"
-  }, 
-  {
-    name: "Cosmic - Virgo",
-    text: [
-      "When {C:attention}\"Cosmic\" Joker{} retrigger played cards,",
-			"add {X:purple,C:white}Cosmic-Tokens{} to this card.",
-            "Retrigger played {C:attention}Queen{} cards.",	
-            "{C:inactive}({C:purple}Cosmic-Tokens{}{C:inactive}: 0)",
-			"{C:inactive}(Like a guardian angel, Virgo keeps you safe.)"
-    ],
-    image_url: "assets/1x/j_cosmicvirgo.png",
-    rarity: "Uncommon"
-  }, 
+  },
   {
     name: "Cosmic - Sagittarius",
     text: [
-      "When you beat a {C:attention}Blind{},",
-			"add 5 {X:purple,C:white}Cosmic-Tokens{} to this card.",
-            "Gains {X:mult,C:white}X0.01{} Mult for every {C:purple}Cosmic-Tokens{} on your Jokers", 
-            "Retrigger played {C:attention}Jack{} cards.",	
-            "{C:inactive}({C:purple}Total Cosmic-Tokens{}{C:inactive}: 0 = {X:mult,C:white} X1{} Mult)",
-			"{C:inactive}(His arrows will blot out the sun. )"
+      "Add 1 {C:purple}Cosmic-Token{} to every {C:purple}\"Cosmic\" Joker{} after each round.",
+      "Gains {X:mult,C:white}X0.01{} Mult for all {C:purple}Cosmic-Tokens{} on your Jokers.", 
+      "Retrigger played {C:attention}Jack{} cards.",	
+      "{C:inactive}(Total {C:purple}Cosmic-Tokens{}{C:inactive}: {X:purple,C:white}0{} = {X:mult,C:white} X1.0{} {C:inactive}Mult)",
+"{C:inactive}(His arrows will blot out the sun.)"
     ],
     image_url: "assets/1x/j_cosmicsagittarius.png",
-    rarity: "Rare"
-  }, 
+    rarity: "Uncommon"
+  },  
+  
+  {
+    name: "Cosmic - Virgo",
+    text: [
+      "Add {C:purple}Cosmic-Tokens{} to all {C:purple}\"Cosmic\" Joker{} for every",
+      "card retriggered by a {C:purple}\"Cosmic\" Joker{} this round.",
+      "Retrigger played {C:attention}Queen{} cards.",	
+      "{C:inactive}({C:purple}Cosmic-Tokens{}{C:inactive}: {X:purple,C:white}0{}{C:inactive})",
+"{C:inactive}(Like a guardian angel, Virgo keeps you safe.)"
+    ],
+    image_url: "assets/1x/j_cosmicvirgo.png",
+    rarity: "Uncommon"
+  },
+  
   {
     name: "Cosmic - Libra",
     text: [
       "Scored Cards add half of their",
-            "{C:chips}Chips{} value as {C:red}Mult{}",
-            "Retrigger played {C:attention}10{} cards.",				
-			"{C:inactive}(Libra brings balance to all)"
+      "{C:chips}Chips{} value as {C:red}Mult{}",
+      "Retrigger played {C:attention}10{} cards.",
+      "{C:inactive}({C:purple}Cosmic-Tokens{}{C:inactive}: {X:purple,C:white}0{}{C:inactive})",		
+"{C:inactive}(Libra brings balance to all)"
     ],
     image_url: "assets/1x/j_cosmiclibra.png",
     rarity: "Rare"
-  },   
+  },
+  {
+    name: "Cosmic - Leo",
+    text: [
+      "When a played card is retriggered",
+			"by another {C:purple}\"Cosmic\" Joker{},",
+            "retrigger it again.",
+            "Retrigger played {C:attention}King{} cards.",	
+            "{C:inactive}({C:purple}Cosmic-Tokens{}{C:inactive}: {X:purple,C:white}0{}{C:inactive})",
+			"{C:inactive}(The mighty Leo rules over them.)"
+    ],
+    image_url: "assets/1x/j_cosmicleo.png",
+    rarity: "Rare"
+  },    
   {
     name: "Combat Ace - Soldier",
     text: [
@@ -156,6 +257,7 @@ let cols = {
   FILTER: "#ff9a00",
   ATTENTION: "#ff9a00",
   BLUE: "#009dff",
+  LEGENDARY: "#b26cbb",
   RED: "#FE5F55",
   GREEN: "#4BC292",
   PALE_GREEN: "#56a887",
