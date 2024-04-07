@@ -7,7 +7,7 @@ let jokers = [
       "{C:inactive}(Steadfast ambition guides Capricorn's climb.)",
       "{C:inactive}({C:purple}Cosmic-Tokens:{} {X:purple,C:white}0{}{C:inactive})"    
     ],
-    image_url: "assets/1x/Capricorn.png",
+    image_url: "assets/1x/capricorn.png",
     rarity: "Common"
   }, 
   {
