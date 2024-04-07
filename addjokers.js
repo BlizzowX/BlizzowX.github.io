@@ -1,5 +1,198 @@
 let jokers = [
   {
+    name : "Cosmic - Capricorn",
+    text: [
+      "Scored cards gain {C:chips}+3{} Chips permanently.",
+      "{C:purple}+1 Cosmic-Token{} per {C:attention}2{} scored.",
+      "{C:inactive}(Steadfast ambition guides Capricorn's climb.)",
+      "{C:inactive}({C:purple}Cosmic-Tokens:{} {X:purple,C:white}0{}{C:inactive})"    
+    ],
+    image_url: "assets/1x/Capricorn.png",
+    rarity: "Common"
+  }, 
+  {
+    name : "Cosmic - Aquarius",
+    text: [
+      "{C:green}1 in 6{} chance to gain {C:money}$1{} per card scored.",
+      "{C:purple}+1 Cosmic-Token{} per {C:attention}3{} scored.",
+"{C:inactive}(Innovative vision shapes Aquarius' path.)",
+      "{C:inactive}({C:purple}Cosmic-Tokens:{} {X:purple,C:white}0{}{C:inactive})"    
+    ],
+    image_url: "assets/1x/aquarius.png",
+    rarity: "Common"
+  }, 
+  {
+    name : "Cosmic - Pisces",
+    text: [
+      "Gains {C:mult}+1{} Mult and {C:purple}+1 Cosmic-Token{}.",
+            "per {C:attention}4{} scored. {C:inactive}(Currently {C:mult}+3{} {C:inactive}Mult)",
+			"{C:inactive}(Boundless empathy guides Pisces' journey.)",
+      "{C:inactive}({C:purple}Cosmic-Tokens:{} {X:purple,C:white}0{}{C:inactive})"    
+    ],
+    image_url: "assets/1x/pisces.png",
+    rarity: "Common"
+  }, 
+  {
+    name : "Cosmic - Aries",
+    text: [
+      "Gains {C:chips}+10{} Chips and {C:purple}+1 Cosmic-Token{}.",
+      "per {C:attention}5{} scored. {C:inactive}(Currently {C:chips}+30{} {C:inactive}Chips)",
+"{C:inactive}(Unyielding courage fuels Aries' pursuits.)" ,
+      "{C:inactive}({C:purple}Cosmic-Tokens:{} {X:purple,C:white}0{}{C:inactive})"    
+    ],
+    image_url: "assets/1x/aries.png",
+    rarity: "Common"
+  }, 
+  {
+    name : "Cosmic - Taurus",
+    text: [
+      "Gains {C:green}1%{} chance per {C:purple}Cosmic-Token{} on this",
+      "to {C:attention}enhance{} scored cards. {C:inactive}(Currently {C:green}5%{}{C:inactive} chance)",    
+      "{C:purple}+1 Cosmic-Token{} per {C:attention}6{} scored.",
+"{C:inactive}(Enduring patience fortifies Taurus' strides.)",
+      "{C:inactive}({C:purple}Cosmic-Tokens:{} {X:purple,C:white}0{}{C:inactive})"    
+    ],
+    image_url: "assets/1x/taurus.png",
+    rarity: "Uncommon"
+  }, 
+  {
+    name : "Cosmic - Gemini",
+    text: [
+      "Gains {C:green}4%{} chance per {C:purple}Cosmic-Token{} on this",
+      "to {C:attention}retrigger{} scored cards. {C:inactive}(Currently {C:green}12%{}{C:inactive} chance)",      
+      "{C:purple}+1 Cosmic-Token{} per {C:attention}7{} scored.",
+"{C:inactive}(Curious intellect propels Gemini's exploration.)",
+      "{C:inactive}({C:purple}Cosmic-Tokens:{} {X:purple,C:white}0{}{C:inactive})"    
+    ],
+    image_url: "assets/1x/gemini.png",
+    rarity: "Uncommon"
+  }, 
+  {
+    name : "Cosmic - Cancer",
+    text: [
+      "Gains {C:green}1%{} chance per {C:purple}Cosmic-Token{} on this",
+      "to add a {C:attention}Seal{} to discarded cards. {C:inactive}(Currently {C:green}5%{}{C:inactive} chance)",
+      "{C:purple}+1 Cosmic-Token{} per {C:attention}8{} scored.",
+"{C:inactive}(Emotional depth enriches Cancer's connections.)",
+      "{C:inactive}({C:purple}Cosmic-Tokens:{} {X:purple,C:white}0{}{C:inactive})"    
+    ],
+    image_url: "assets/1x/cancer.png",
+    rarity: "Uncommon"
+  }, 
+  {
+    name : "Cosmic - Leo",
+    text: [
+      "Gains {C:green}1%{} chance per {C:purple}Cosmic-Token{} on this",
+      "to add a {C:attention}Edition{} to discarded cards. {C:inactive}(Currently {C:green}5%{}{C:inactive} chance)",
+      "{C:purple}+1 Cosmic-Token{} per {C:attention}9{} scored.",
+"{C:inactive}(Majestic passion ignites Leo's pursuits.)",
+      "{C:inactive}({C:purple}Cosmic-Tokens:{} {X:purple,C:white}0{}{C:inactive})"    
+    ],
+    image_url: "assets/1x/leo.png",
+    rarity: "Uncommon"
+  }, 
+  {
+    name : "Cosmic - Virgo",
+    text: [
+      "Decreases blind size by {C:blue}0.1%{} per {C:purple}Cosmic-Token{}",
+            "on all your {C:purple}Cosmic Jokers{}. {C:inactive}(Currently {C:blue}3%{}{C:inactive} decrease)",
+            "{C:purple}+1 Cosmic-Token{} per {C:attention}10{} scored.",
+			"{C:inactive}(Discerning wisdom guides Virgo's protection.)",
+            "{C:inactive}(Total {C:purple}Cosmic-Tokens:{} {X:purple,C:white}0{}{C:inactive})"      
+    ],
+    image_url: "assets/1x/virgo.png",
+    rarity: "Rare"
+  }, 
+  {
+    name : "Cosmic - Libra",
+    text: [
+      "Adds {C:mult}+1%{} chip value of scored card as Mult",
+            "per {C:purple}Cosmic-Token{} on all your {C:purple}Cosmic Jokers{}.",
+            "{C:inactive}(Currently {C:mult}20%{}{C:inactive} chip value as Mult)",
+            "{C:purple}+1 Cosmic-Token{} per {C:attention}Jack{} scored.",
+			"{C:inactive}(Graceful equilibrium guides Libra's decisions.)",
+            "{C:inactive}(Total {C:purple}Cosmic-Tokens:{} {X:purple,C:white}0{}{C:inactive})"      
+    ],
+    image_url: "assets/1x/libra.png",
+    rarity: "Rare"
+  }, 
+  {
+    name : "Cosmic - Scorpio",
+    text: [
+      "Scored cards gain {C:chips}+1{} Chips permanently",
+      "per {C:purple}Cosmic-Token{} on all your {C:purple}Cosmic Jokers{}.",
+      "{C:inactive}(Currently {C:chips}+3{}{C:inactive} Chips)",
+      "{C:purple}+1 Cosmic-Token{} per {C:attention}Queen{} scored.",
+"{C:inactive}(Unyielding determination propels Scorpio's evolution.)",
+            "{C:inactive}(Total {C:purple}Cosmic-Tokens:{} {X:purple,C:white}0{}{C:inactive})"      
+    ],
+    image_url: "assets/1x/scorpio.png",
+    rarity: "Rare"
+  },
+  {
+    name : "Cosmic - Sagittarius",
+    text: [
+      "Gains {C:mult}+1{} Mult per {C:purple}Cosmic-Token{}",
+      "on all your {C:purple}Cosmic Jokers{}. {C:inactive}(Currently {C:mult}+10{}{C:inactive} Mult)",
+      "{C:purple}+1 Cosmic-Token{} per {C:attention}King{} scored.",
+"{C:inactive}(Boundless optimism guides Sagittarius' adventures.)",
+            "{C:inactive}(Total {C:purple}Cosmic-Tokens:{} {X:purple,C:white}0{}{C:inactive})"      
+    ],
+    image_url: "assets/1x/sagittarius.png",
+    rarity: "Rare"
+  },
+  {
+    name : "Cosmic - Ophiuchus",
+    text: [
+      "Gains {X:mult,C:white}X0.01{} Mult per {C:purple}Cosmic-Token{}",
+      "on all your {C:purple}Cosmic Jokers{}. {C:inactive}(Currently {X:mult,C:white}X1.0{}{C:inactive} Mult)",
+      "{C:purple}Cosmic Jokers{} gain 3X as many {C:purple}Cosmic-Tokens{}.",
+"{C:inactive}(When the stars gather, Ophiuchus shines once more)",
+            "{C:inactive}(Total {C:purple}Cosmic-Tokens:{} {X:purple,C:white}0{}{C:inactive})"      
+    ],
+    image_url: "assets/1x/ophiuchus.png",
+    rarity: "Legendary"
+  },
+  {
+    name : "The Cosmos",
+    text: [
+      "Creates a random",
+            "{C:purple}Cosmic Joker{}.",
+            "{C:inactive}(Must have room)"
+    ],
+    image_url: "assets/1x/cosmos.png",
+    rarity: "Tarot"
+  },
+  {
+    name : "The Constellation",
+    text: [
+      "Up to 3 selected cards gain",
+            "{C:chips}+15{} Chips permanently",
+            "All {C:purple}Cosmic Jokers{} gain",
+            "{C:purple}+5 Cosmic-Tokens{}."
+    ],
+    image_url: "assets/1x/constellation.png",
+    rarity: "Tarot"
+  },
+  {
+    name : "The Sign",
+    text: [
+      "All {C:purple}Cosmic Jokers{} gain {C:purple}+10 Cosmic-Tokens{}.",
+            "If you have more than 150",
+            "{C:purple}Cosmic-Token{} on your Jokers,",
+            "create a negative {C:legendary}Cosmic Ophiuchus."
+    ],
+    image_url: "assets/1x/sign.png",
+    rarity: "Tarot"
+  },
+  
+  
+  
+  
+  
+  
+  
+  {
     name : "First Piece of the Mischievous One",
     text: [
       "{C:mult}+1{} Mult",
@@ -71,94 +264,17 @@ let jokers = [
     ],
     image_url: "assets/1x/j_jimbothemischievousone.png",
     rarity: "Legendary"
-  }, 
-  {
-    name: "Cosmic - Aquarius",
-    text: [
-      "Add 2 {C:purple}Cosmic-Token{} to every {C:purple}\"Cosmic\" Joker{}",
-      "when you skip any booster",
-      "Retrigger played {C:attention}2{} cards.",	
-      "{C:inactive}({C:purple}Cosmic-Tokens{}{C:inactive}: {X:purple,C:white}0{}{C:inactive})",
-"{C:inactive}(Add something wet here)"
-    ],
-    image_url: "assets/1x/j_cosmicaquarius.png",
-    rarity: "Common"
-  }, 
-  {
-    name: "Cosmic - Pisces",
-    text: [
-      "When selecting a Blind, {C:green}1 in 8{} chance to gain ",
-      "{C:money}$1{} for each {C:purple}Cosmic-Tokens{} on this card.",
-      "Retrigger played {C:attention}3{} cards.",	
-      "{C:inactive}({C:purple}Cosmic-Tokens{}{C:inactive}: {X:purple,C:white}0{}{C:inactive})",
-"{C:inactive}(Add something fishy here)"
-    ],
-    image_url: "assets/1x/j_cosmicpisces.png",
-    rarity: "Common"
-  }, 
-  {
-    name: "Cosmic - Gemini",
-    text: [
-      "Every 2 scored cards of",
-      "the same rank add {X:mult,C:white} X1.2{} Mult",
-      "Retrigger played {C:attention}6{} cards.",	
-      "{C:inactive}({C:purple}Cosmic-Tokens{}{C:inactive}: {X:purple,C:white}0{}{C:inactive})",
-      "{C:inactive}(Two are better than one.)"
-    ],
-    image_url: "assets/1x/j_cosmicgemini.png",
-    rarity: "Uncommon"
   },
   {
-    name: "Cosmic - Sagittarius",
+    name : "Mischief",
     text: [
-      "Add 1 {C:purple}Cosmic-Token{} to every {C:purple}\"Cosmic\" Joker{} after each round.",
-      "Gains {X:mult,C:white}X0.01{} Mult for all {C:purple}Cosmic-Tokens{} on your Jokers.", 
-      "Retrigger played {C:attention}Jack{} cards.",	
-      "{C:inactive}(Total {C:purple}Cosmic-Tokens{}{C:inactive}: {X:purple,C:white}0{} = {X:mult,C:white} X1.0{} {C:inactive}Mult)",
-"{C:inactive}(His arrows will blot out the sun.)"
+      "Creates a {C:attention}Piece of the Mischievous One",
+      "or {C:attention}Cultist of the Mischievous One",
+      "{C:inactive}(Must have room)"
     ],
-    image_url: "assets/1x/j_cosmicsagittarius.png",
-    rarity: "Uncommon"
-  },  
-  
-  {
-    name: "Cosmic - Virgo",
-    text: [
-      "Add {C:purple}Cosmic-Tokens{} to all {C:purple}\"Cosmic\" Joker{} for every",
-      "card retriggered by a {C:purple}\"Cosmic\" Joker{} this round.",
-      "Retrigger played {C:attention}Queen{} cards.",	
-      "{C:inactive}({C:purple}Cosmic-Tokens{}{C:inactive}: {X:purple,C:white}0{}{C:inactive})",
-"{C:inactive}(Like a guardian angel, Virgo keeps you safe.)"
-    ],
-    image_url: "assets/1x/j_cosmicvirgo.png",
-    rarity: "Uncommon"
-  },
-  
-  {
-    name: "Cosmic - Libra",
-    text: [
-      "Scored Cards add half of their",
-      "{C:chips}Chips{} value as {C:red}Mult{}",
-      "Retrigger played {C:attention}10{} cards.",
-      "{C:inactive}({C:purple}Cosmic-Tokens{}{C:inactive}: {X:purple,C:white}0{}{C:inactive})",		
-"{C:inactive}(Libra brings balance to all)"
-    ],
-    image_url: "assets/1x/j_cosmiclibra.png",
-    rarity: "Rare"
-  },
-  {
-    name: "Cosmic - Leo",
-    text: [
-      "When a played card is retriggered",
-			"by another {C:purple}\"Cosmic\" Joker{},",
-            "retrigger it again.",
-            "Retrigger played {C:attention}King{} cards.",	
-            "{C:inactive}({C:purple}Cosmic-Tokens{}{C:inactive}: {X:purple,C:white}0{}{C:inactive})",
-			"{C:inactive}(The mighty Leo rules over them.)"
-    ],
-    image_url: "assets/1x/j_cosmicleo.png",
-    rarity: "Rare"
-  },    
+    image_url: "assets/1x/mischief.png",
+    rarity: "Tarot"
+  },   
   {
     name: "Combat Ace - Soldier",
     text: [
@@ -246,6 +362,16 @@ let jokers = [
     image_url: "assets/1x/j_combataceveteran.png",
     rarity: "Legendary"
   },
+  {
+    name : "The Contract",
+    text: [
+      "Creates a random",
+      "{C:attention}Combat Ace Joker{}.",
+      "{C:inactive}(Must have room)"
+    ],
+    image_url: "assets/1x/contract.png",
+    rarity: "Tarot"
+  }, 
 ]
 
 let cols = {
@@ -330,7 +456,8 @@ let rarities = {
   "Common": "#009dff", 
   "Uncommon": "#4BC292",
   "Rare": "#fe5f55",
-  "Legendary": "#b26cbb"
+  "Legendary": "#b26cbb",
+  "Tarot":"#424e54"
 }
 
 regex = /{([^}]+)}/g;
