@@ -58,8 +58,8 @@ let jokers = [
   {
     name : "Cosmic - Gemini",
     text: [
-      "Gains {C:green}4%{} chance per {C:purple}Cosmic-Token{} on this",
-      "to {C:attention}retrigger{} scored cards. {C:inactive}(Currently {C:green}12%{}{C:inactive} chance)",      
+      "Gains {C:green}1%{} chance per {C:purple}Cosmic-Token{} on this",
+      "to {C:attention}retrigger{} scored cards. {C:inactive}(Currently {C:green}5%{}{C:inactive} chance)",      
       "{C:purple}+1 Cosmic-Token{} per {C:attention}7{} scored.",
 "{C:inactive}(Curious intellect propels Gemini's exploration.)",
       "{C:inactive}({C:purple}Cosmic-Tokens:{} {X:purple,C:white}0{}{C:inactive})"    
