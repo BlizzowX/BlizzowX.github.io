@@ -1,4 +1,85 @@
 let jokers = [
+
+  {
+    name : "Omen - Mirror Shard",
+    text: [
+      "When selecting a {C:attention}blind{}:",                   
+      "{C:green}1 in 3{} chance to turn into",
+      "{C:attention}Omen - Broken Mirror{}.{C:inactive}",
+      "{C:red}1 in 3{} chance to get {C:red}destroyed{}.", 
+"{C:inactive}(... lucky?)"  
+    ],
+    image_url: "assets/1x/mirrorshard.png",
+    rarity: "Common"
+  }, 
+  {
+    name : "Omen - Broken Mirror",
+    text: [
+      "{C:green}1 in 6{} chance to turn", 
+      "scored hand into {C:attention}Glass Cards{}.",
+      "{C:red}1 in 4{} chance to {C:attention}shatter{} after scoring", 
+"{C:inactive}(Mirror, mirror on the wall.)"    
+    ],
+    image_url: "assets/1x/brokenmirror.png",
+    rarity: "Uncommon"
+  }, 
+  {
+    name : "Omen - Black Cat",
+    text: [
+      "{C:green}1 in 6{} chance to turn", 
+      "scored hand into {C:attention}Lucky Cards{}.",
+      "{C:red}1 in 4{} chance to {C:red}lose {C:money}$2{} after scoring", 
+"{C:inactive}(Why did the cat cross the road?)"    
+    ],
+    image_url: "assets/1x/cat.png",
+    rarity: "Uncommon"
+  }, 
+  {
+    name : "Omen - Suspicious Ladder",
+    text: [
+      "When selecting a {C:attention}blind{}:",                   
+      "{C:green}1 in 6{} chance to {C:green}decrease blind size{}.", 
+      "{C:red}1 in 4{} chance to {C:red}increase blind size{}", 
+"{C:inactive}(It just stands there. Menacingly!)"  
+    ],
+    image_url: "assets/1x/ladder.png",
+    rarity: "Uncommon"
+  },
+  {
+    name : "Omen - Thirteen",
+    text: [
+      "Gains {X:mult,C:white}X0.25{} Mult when {C:red}bad effects{} activate.", 
+      "{C:inactive}(Currently: {X:mult,C:white}X1.0{} {C:inactive}Mult)",                              
+      "{C:green}1 in 4{} chance {C:green}increase {C:red}Bad Karma{}.", 
+      "{C:red}1 in 6{} chance {C:red}decrease {C:green}Good Karma{}.",
+"{C:inactive}(A lucky number?)"  
+    ],
+    image_url: "assets/1x/thirteen.png",
+    rarity: "Rare"
+  },
+  {
+    name : "Omen - Seven",
+    text: [
+      "Gains {X:mult,C:white}X0.25X{} Mult when {C:green}good{} effects activate.",
+      "{C:inactive}(Currently: {X:mult,C:white}X1.0{} {C:inactive}Mult)",                            
+      "{C:green}1 in 6{} chance {C:green}increase Good Karma{}.", 
+      "{C:red}1 in 4{} chance {C:red}decrease {C:green}Good Karma{}.",
+"{C:inactive}(A lucky number!)"  
+    ],
+    image_url: "assets/1x/seven.png",
+    rarity: "Rare"
+  },
+
+
+
+
+
+
+
+
+
+
+
   {
     name : "Cosmic - Capricorn",
     text: [
